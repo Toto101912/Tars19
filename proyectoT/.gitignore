@@ -1,0 +1,12 @@
+backend/venv/
+tars/build/
+__pycache__/
+.env
+proyectoT
+tars/lib/
+tars/data
+tars/backend/
+tars/windows
+tars/android
+tars
+
