@@ -1,18 +1,20 @@
-# --- BLOQUEO TOTAL DE CONTENIDO ---
-# Ignora todo el contenido de frontend
+# --- BLOQUEAR TODO EL CONTENIDO ---
+# Bloquea los archivos de las subcarpetas que no quieres ver
 frontend/**/*
+proyectoT/**/*
 
-# --- EXCEPCIONES (Si quieres que se vea algo mínimo) ---
-# Si quieres que la carpeta aparezca en GitHub aunque esté vacía,
-# necesitas que tenga al menos un archivo. 
-# Lo estándar es NO ignorar el archivo README.md si existe.
-!frontend/README.md
+# --- EXCEPCIONES: QUÉ SÍ QUEREMOS VER ---
+# Permitir que se vea la estructura de la carpeta pero no sus archivos
+!frontend/
+!proyectoT/
 
-# --- EL BACKEND SE QUEDA COMPLETO ---
-!backend/
+# Permitir TODO el contenido de backend (el cerebro de TARS)
 !backend/**
+!backend/
 
-# --- REGLAS DE LIMPIEZA ---
-.env
+# --- REGLAS DE LIMPIEZA INTERNA ---
+# Ignorar entornos virtuales y archivos temporales
 **/venv/
 **/__pycache__/
+**/.env
+.DS_Store
