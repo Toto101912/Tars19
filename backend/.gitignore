@@ -1,13 +1,16 @@
-# --- SEGURIDAD ---
+# --- SEGURIDAD (Crítico) ---
 .env
 **/.env
+**/secrets.json
 
-# --- PYTHON ---
-**/venv/
+# --- PYTHON (Solo basura temporal) ---
 **/__pycache__/
 *.py[cod]
+*$py.class
+venv/
+.venv/
 
-# --- FRONTEND (Ocultar contenido, dejar estructura) ---
+# --- FRONTEND (Ocultamos lo pesado para que no pese el repo) ---
 frontend/build/
 frontend/.dart_tool/
 frontend/android/
@@ -15,6 +18,16 @@ frontend/ios/
 frontend/windows/
 frontend/linux/
 frontend/macos/
+# Si quieres ocultar tu lógica de Flutter pero que se vea la carpeta:
+frontend/lib/**/*
 
-# --- CARPETAS DUPLICADAS ---
+# --- CONFIGURACIÓN PERSONAL ---
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# --- CARPETAS VIEJAS ---
 proyectoT/
