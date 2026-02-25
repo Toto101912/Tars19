@@ -1,12 +1,27 @@
-backend/venv/
-tars/build/
-__pycache__/
+# Secretos y Entorno
 .env
-proyectoT
-tars/lib/
-tars/data
-tars/backend/
-tars/windows
-tars/android
-tars
+**/.env
 
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# Flutter / Android Studio
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+**/android/
+**/ios/
+**/windows/
+**/linux/
+**/macos/
+
+# Carpetas duplicadas o viejas
+proyectoT/
