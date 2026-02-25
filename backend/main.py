@@ -4,8 +4,8 @@ from pydantic import BaseModel, Field
 import time
 
 # Importaciones de tus módulos locales
-from tars.core import hablar_tars
-from tars.memory import extraer_nombre
+from Tars_api.core import hablar_tars
+from Tars_api.memory import extraer_nombre
 
 app = FastAPI(
     title="TARS - Tactical Adaptive Robotic System",
