@@ -1,27 +1,18 @@
-# Secretos y Entorno
+# --- BLOQUEO TOTAL DE CONTENIDO ---
+# Ignora todo el contenido de frontend
+frontend/**/*
+
+# --- EXCEPCIONES (Si quieres que se vea algo mínimo) ---
+# Si quieres que la carpeta aparezca en GitHub aunque esté vacía,
+# necesitas que tenga al menos un archivo. 
+# Lo estándar es NO ignorar el archivo README.md si existe.
+!frontend/README.md
+
+# --- EL BACKEND SE QUEDA COMPLETO ---
+!backend/
+!backend/**
+
+# --- REGLAS DE LIMPIEZA ---
 .env
-**/.env
-
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-venv/
-.venv/
-
-# Flutter / Android Studio
-build/
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.packages
-.pub-cache/
-.pub/
-**/android/
-**/ios/
-**/windows/
-**/linux/
-**/macos/
-
-# Carpetas duplicadas o viejas
-proyectoT/
+**/venv/
+**/__pycache__/
