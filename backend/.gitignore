@@ -1,0 +1,28 @@
+# --- SEGURIDAD ---
+.env
+**/.env
+secrets.json
+
+# --- PYTHON (Basura de sistema) ---
+**/__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+.pytest_cache/
+
+# --- FRONTEND (Solo ocultamos lo pesado) ---
+# Esto deja la carpeta visible pero vacía en la nube
+frontend/android/
+frontend/ios/
+frontend/build/
+frontend/.dart_tool/
+
+# --- EDITORES Y SISTEMA ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- CARPETAS VIEJAS ---
+proyectoT/
